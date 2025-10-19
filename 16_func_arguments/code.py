@@ -1,14 +1,24 @@
-# arguments
+# parametr
 def add(x,y):
     result = x+y
     print(result)
 
-# paramters
+# argument
 add(5,3)
 
 # ---------------------------------
+# parametr
+def say_hello(name, surname):
+    print(f"Hello!, {name} {surname}")
 
-def say_hello():
-    print(f"Hello!, {name}")
+# argument
+say_hello(surname="Bob", name="Smith")
 
-say_hello("Bob")
+# ---------------------------------
+def divide(dividend, divisor):
+    if divisor != 0:
+        print(dividend/divisor)
+    else:
+        print("You fool!")
+
+divide(dividend= 15, divisor=0)
